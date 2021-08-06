@@ -6,9 +6,15 @@ function generatePassword(){
   // Obtain User parameters
   let passwordLength = prompt("Enter the desired password length of the password: ");
 
-    if (!passwordLength){
-      return "Good Luck creating your own.";
+    if (passwordLength<8){
+      window.alert("Minimum of 8 characters is required.")
+      return [];
     }
+    if (passwordLength>128){
+      window.alert("No more than 128 characters is allowed.")
+      return [];
+    }
+
     console.log("desired password length of password is: "+passwordLength);
 
   let specialCrts = window.confirm("Include SPECIAL CHARACTERS in password?");

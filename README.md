@@ -1,21 +1,26 @@
-# **02 HW Portfolio: Code Creation**
+# **Password Generator | Homework 03**
 #### By Sally Alvarenga 🌺,
 ---
 ## Task and Expectation
-In this assignment I was expected to create a personal portfolio that could be used to give to a potential employer as a way to showcase the skill I had learn within the first week and a half of coding bootcamp.
+In this assignment I was expected to render an existing code to create a tool that would generate a randomized password using the user given parameters.
 
-The User expected to be able to load my portfolio and be able to see my name, a recent photo, and links to sections about me and my work. They would have expected all links to have worked and for all the webpage to be responsive to different screen viewing options. The user would have also expected advanced CSS elements to be present in the webpage and the code.
+The User is expected:
+* To be able to load my deployment page 
+* To be able to input how long they want the password to be 
+* Have the option to  include special characters, numbers, lower case letters and/or upper case letter.
+* Choose password length to be a minimum of 8 characters long 
+* Password length to be more than 128 characters long.
 
 
 ## Results
-You can View my Deployed Portfolio Here: https://salvarenga74.github.io/Portfolio_HW_02/
-<img src="assets/Images/Screen Shot 2021-08-05 at 4.53.07 AM.png" alt="Screen grab of my completed and deployed portfolio page."/>
+You can View my Deployed Portfolio Here: https://salvarenga74.github.io/Password_Generator_HW03/
+<img src="assets/Screen Shot 2021-08-05 at 10.35.23 PM.png" alt="Screen grab of my completed and deployed Password Generating Page"/>
 
-I met the accepted criteria of this assignment and have gone beyond (in my opinion) to create a beautiful portfolio page that is a reflection of my potential as a developer and my work ethic. It contains 2 current photos of myself, has a section that describes the other applications I have deployed, contains a section with some background about myself, and gives my contact information.
+I met the accepted criteria of this assignment and have gone written a beautiful js script page (in my opinion). I have taken care that all of my code follows a logical path and is easy to read and understand the purpose for the sections of code according to use.
 
-My Portfolio has a functioning Navigation Bar that jump down to the desired section within the webpage.  
+My password generator collects user input for all the required fields and stores the values to be used throughout the code. I also have parameters that ensure the inputs meet the requirements in terms of length.  
 
-It also shows the advanced CSS that was expected such as growing sections when the user hovers over them, links on images that deploy to live websites, and a responsive layout that changed based on the screen view. 
+The password generator uses utilizes functions for random number in combination to arrays to create new randomized arrays. This tool also utilized a for loop to create a completed random password.
 
 ---
 © 2021 Sally Alvarenga 🌺, LLC.
