@@ -46,17 +46,19 @@ function generatePassword(){
   }
     console.log("The gen array so far"+genArray);
 
-  // Time to randomly choose elements from the genArray to create our custom password.
-  
-  let randomIndexVal = Math.floor(Math.random()*genArray.length);
-      console.log("random index number is "+randomIndexVal);
 
-  let chosenEl = genArray[randomIndexVal];
-    console.log("The randomly chosen element is" + chosenEl);
-  let finalArray = [];
-  finalArray.push(chosenEl);
+  // Creating a for loop that generate the desired amount of characters into the final array based on user input.
+  var finalArray = [];
+  for (let i=0; i<passwordLength; i++){
+    // Time to randomly choose elements from the genArray to create our custom password.
+    let randomIndexVal = Math.floor(Math.random()*genArray.length);
+        console.log("random index number is "+ randomIndexVal);
+
+    var chosenEl = genArray[randomIndexVal];
+      console.log("The randomly chosen element is " + chosenEl);
+    finalArray.push(chosenEl);
+  }
     console.log("The final array is "+ finalArray);
-
 
 return "test";
 }
