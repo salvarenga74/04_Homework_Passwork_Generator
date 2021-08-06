@@ -4,12 +4,12 @@ let generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
   // Obtain User parameters
-  let characterLength = prompt("Enter the desired character length of the password: ");
+  let passwordLength = prompt("Enter the desired password length of the password: ");
 
-    if (!characterLength){
+    if (!passwordLength){
       return "Good Luck creating your own.";
     }
-    console.log("desired character length of password is: "+characterLength);
+    console.log("desired password length of password is: "+passwordLength);
 
   let specialCrts = window.confirm("Include SPECIAL CHARACTERS in password?");
     console.log("specialCrts value is:" + specialCrts);
@@ -44,9 +44,20 @@ function generatePassword(){
   if (upperCrts) {
   genArray = [...genArray, ...upperArray];
   }
-  console.log("The gen array so far"+genArray);
+    console.log("The gen array so far"+genArray);
 
+  // Time to randomly choose elements from the genArray to create our custom password.
   
+  let randomIndexVal = Math.floor(Math.random()*genArray.length);
+      console.log("random index number is "+randomIndexVal);
+
+  let chosenEl = genArray[randomIndexVal];
+    console.log("The randomly chosen element is" + chosenEl);
+  let finalArray = [];
+  finalArray.push(chosenEl);
+    console.log("The final array is "+ finalArray);
+
+
 return "test";
 }
 
