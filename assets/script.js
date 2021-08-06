@@ -11,31 +11,40 @@ function generatePassword(){
     }
     console.log("desired character length of password is: "+characterLength);
 
-  let specialCrts = window.confirm("Include special characters in password?");
+  let specialCrts = window.confirm("Include SPECIAL CHARACTERS in password?");
     console.log("specialCrts value is:" + specialCrts);
 
-  let numericCrts = window.confirm("Include special characters in password?");
+  let numericCrts = window.confirm("Include NUMERIC CHARACTERS in password?");
     console.log("numericCrts value is:" + numericCrts);
 
-  let lowerCrts = window.confirm("Include special characters in password?");
+  let lowerCrts = window.confirm("Include LOWER CASE LETTERS in password?");
     console.log("lowerCrts value is:" + lowerCrts);
 
-  let upperCrts = window.confirm("Include special characters in password?");
+  let upperCrts = window.confirm("Include UPPER CASE LETTERS in password?");
     console.log("upperCrts value is:" + upperCrts);
 
 
   //Utilize the user input to generate the array we will chose random values from
   let specialArray = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
-  let numArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+  let numericArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   let lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   let upperArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
   let genArray = [];
 
   if (specialCrts === true) {
-    let genArray = [...genArray, ...specialArray];
-  };
-  console.log(genArray);
+     genArray = [...genArray, ...specialArray];
+  }
+  if (numericCrts) {
+    genArray = [...genArray, ...numericArray];
+  }
+ if (lowerCrts) {
+  genArray = [...genArray, ...lowerArray];
+  }
+  if (upperCrts) {
+  genArray = [...genArray, ...upperArray];
+  }
+  console.log("The gen array so far"+genArray);
 
   
 return "test";
