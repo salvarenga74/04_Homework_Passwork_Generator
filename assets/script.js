@@ -60,7 +60,8 @@ function generatePassword(){
   }
     console.log("The final array is "+ finalArray);
 
-return "test";
+  // Converting array to a string
+  return finalArray.join(" ");
 }
 
 // Write password to the #password input
